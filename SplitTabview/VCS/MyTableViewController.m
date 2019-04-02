@@ -28,6 +28,8 @@
    
     
     [self.detailDelegate sendSelectedNavController:@"STR"];
+    NSArray *ArrayForInformation;
+    NSString *ToCollectData;
 }
 
 #pragma mark - Table view data source
