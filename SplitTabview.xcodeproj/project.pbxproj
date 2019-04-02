@@ -13,6 +13,11 @@
 		AE1679062251F31100511139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1679052251F31100511139 /* Assets.xcassets */; };
 		AE1679092251F31100511139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1679072251F31100511139 /* LaunchScreen.storyboard */; };
 		AE16790C2251F31100511139 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16790B2251F31100511139 /* main.m */; };
+		AE1679152251F53C00511139 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1679142251F53C00511139 /* ProductViewController.m */; };
+		AE1679182251F54800511139 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1679172251F54800511139 /* CartViewController.m */; };
+		AE16791B2251F55900511139 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16791A2251F55900511139 /* OrderViewController.m */; };
+		AE16791F2251FFF100511139 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE16791E2251FFF100511139 /* MyTableViewController.m */; };
+		AE167922225200F500511139 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE167921225200F500511139 /* MyTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		AE1679082251F31100511139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE16790A2251F31100511139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE16790B2251F31100511139 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE1679132251F53C00511139 /* ProductViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
+		AE1679142251F53C00511139 /* ProductViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
+		AE1679162251F54800511139 /* CartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		AE1679172251F54800511139 /* CartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		AE1679192251F55900511139 /* OrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		AE16791A2251F55900511139 /* OrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		AE16791D2251FFF100511139 /* MyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		AE16791E2251FFF100511139 /* MyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		AE167920225200F500511139 /* MyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		AE167921225200F500511139 /* MyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,8 @@
 		AE1678FB2251F30F00511139 /* SplitTabview */ = {
 			isa = PBXGroup;
 			children = (
+				AE16791C2251FFD900511139 /* TVC */,
+				AE1679122251F52000511139 /* VCS */,
 				AE1678FC2251F30F00511139 /* AppDelegate.h */,
 				AE1678FD2251F30F00511139 /* AppDelegate.m */,
 				AE1678FF2251F30F00511139 /* ViewController.h */,
@@ -69,6 +86,30 @@
 				AE16790B2251F31100511139 /* main.m */,
 			);
 			path = SplitTabview;
+			sourceTree = "<group>";
+		};
+		AE1679122251F52000511139 /* VCS */ = {
+			isa = PBXGroup;
+			children = (
+				AE16791D2251FFF100511139 /* MyTableViewController.h */,
+				AE16791E2251FFF100511139 /* MyTableViewController.m */,
+				AE167920225200F500511139 /* MyTableViewCell.h */,
+				AE167921225200F500511139 /* MyTableViewCell.m */,
+				AE1679132251F53C00511139 /* ProductViewController.h */,
+				AE1679142251F53C00511139 /* ProductViewController.m */,
+				AE1679162251F54800511139 /* CartViewController.h */,
+				AE1679172251F54800511139 /* CartViewController.m */,
+				AE1679192251F55900511139 /* OrderViewController.h */,
+				AE16791A2251F55900511139 /* OrderViewController.m */,
+			);
+			path = VCS;
+			sourceTree = "<group>";
+		};
+		AE16791C2251FFD900511139 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE1679012251F30F00511139 /* ViewController.m in Sources */,
+				AE16791B2251F55900511139 /* OrderViewController.m in Sources */,
+				AE1679182251F54800511139 /* CartViewController.m in Sources */,
 				AE16790C2251F31100511139 /* main.m in Sources */,
+				AE16791F2251FFF100511139 /* MyTableViewController.m in Sources */,
+				AE167922225200F500511139 /* MyTableViewCell.m in Sources */,
+				AE1679152251F53C00511139 /* ProductViewController.m in Sources */,
 				AE1678FE2251F30F00511139 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

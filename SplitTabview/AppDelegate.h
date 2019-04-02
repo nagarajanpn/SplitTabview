@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CartViewController.h"
+#import "ProductViewController.h"
+#import "OrderViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) UITabBarController *tabBar;
+@property (strong, nonatomic) UISplitViewController *splitVC;
 
 @end
 
